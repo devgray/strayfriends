@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>stray friends</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport"
+        content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+        <meta name="description" content="A PFP/generative art project where we produce one collection at a time creating a chain of strays. Starting with our genesis collection stray friends, which will consist of casual everyday traits.">
+        <meta name="keywords" content="nft project, ethereum nft project, generative nft, free mint">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <!-- <link rel="manifest" href="/site.webmanifest"> -->
+        <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+        <!-- BOOTSTRAP 4.4 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- AOS LIBRARY -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- CUSTOM STYLE -->
+        
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800,900&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="scrollup.js"></script>
+        <script>
+        $(function() {
+            AOS.init();
+        });
+            window.addEventListener('scroll',(e)=>{
+              const nav = document.querySelector('.navbar');
+              const logo = document.querySelectorAll('.title');
+              const logo2 = document.querySelector('.logo');
+              if(window.pageYOffset>0){
+                nav.classList.add("add-shadow");
+                logo.forEach((x) => {
+                    x.classList.add("logoresize");
+                });
+                
+                logo2.classList.add("adjustmargin");
+              }else{
+                nav.classList.remove("add-shadow");
+                logo.forEach((x) => {
+                    x.classList.remove("logoresize");
+                });
+                logo2.classList.remove("adjustmargin");
+              }
+            });
+          </script>
+    
+    <body>
+        
+        <div class="logo d-flex justify-content-center">
+            <a href="#home" class="nav title">stray&nbsp;<span class="color-red title">f</span><span class="color-blue title">r</span><span class="color-yellow title">i</span><span class="color-red title">e</span><span class="color-blue title">n</span><span class="color-yellow title">d</span><span class="color-red title">s</span></a>
+            
+            <a href="#home" class="nav title" hidden>stray friends</a>
+        </div>
+
+        <div class="container-fluid navbar d-flex justify-content-end navbar">
+            <div class="menu">
+                <div class="nav align-items-center">
+                    <ol id="nav-desktop">
+                        <li><a href="#about">/about</a></li>
+                        <li><a href="#roadmap">/roadmap</a></li>
+                        <li><a href="#timeline">/timeline</a></li>
+                        <li><a href="#team">/team</a></li>
+                        <li hidden><a href="pfpmaker/">/pfpmaker</a></li>
+                    </ol>
+                        <a class="btnlink" href="https://twitter.com/strayfriendsnft" target="_blank"><div class="btn btn-icon ml-3 d-flex align-items-center justify-content-center"><i class="fab fa-twitter"></i></div></a>
+                        <a class="btnlink" href="https://discord.gg/HMzpvHucGx" target="_blank"><div class="btn btn-icon ml-3 d-flex align-items-center justify-content-center"><i class="fab fa-discord"></i></div></a>
+                        
+                        <div class="btn ml-3" hidden>connect wallet</div>
+                        <div class="btn ml-3" hidden>mint</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid hero d-flex flex-column align-items-center justify-content-center" id="home">
+            <div class="row">
+                <h1 class="section-header m-auto stray">If the opportunity does not find you, <span class="stray create color-red">c</span><span class="stray create color-blue">r</span><span class="stray create color-yellow">e</span><span class="stray create color-red">a</span><span class="stray create color-blue">t</span><span class="stray create color-yellow">e</span> one.</h1>
+
+            </div>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-6"><img src="/img/about-img.png" class="img-fluid" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500"></div>
+                <div class="col-6"><img src="/img/about-img.png" class="img-fluid" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500" data-aos-delay="100"></div>
+            </div>
+
+        </div>
+        <div class="container-fluid section-1-bg">
+            <div class="row">   
+                <div class="container section section-100 d-flex align-items-center justify-content-center" id="about">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-12 d-flex flex-column">
+                            <h1 class="section-header m-auto" hidden>If the opportunity doesn't find us, we create it.</h1>
+                            <h6 class="section-subheader m-auto stray"></h6>
+                        </div>
+                        <!-- <div class="col-sm-6">
+                            <img src="img/about.png" class="img-fluid">
+                        </div> -->
+                        <div class="col-3"><img src="/img/about-img.png" class="img-fluid" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom" data-aos-duration="900"></div>
+                        <div class="col-6 mb-5">
+                            <p class="section-content">
+                                Stray Friends is an NFT art project where we create a chain collection consisting of 1996 NFTs each.
+                            <p class="section-content">
+                                The goal of this project is to build around different web3 communities with a common interest in art and helping others.
+                            </p>
+                        </div>
+                        
+                        <div class="col-9 mt-5" hidden>
+                            <p class="section-content">
+                                This project will contain 1,996 mintable NFTs per collection, which 50% of will be allocated to free mints, and the other 50% will be available to mint for allowlists.
+                            </p>
+                            <p class="section-content">
+                                New to NFTs or you are just here to explore and want a custom and free PFP? Check out our <a href="#pfpmaker">pfpmaker</a> where we allow anyone to create their own pfp with the prototype traits, which version will not be included to the collection's official trait list.
+                            </p>
+                            
+                        </div>
+                        
+                        <div class="col-12 scroll-down d-flex justify-content-center"><a href="#roadmap"><img src="/fontawesome/angle-down.svg"></a></div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="container-fluid">
+            <div class="row">   
+                <div class="container section section-1 section-timeline d-flex align-items-center justify-content-center" id="roadmap">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-12 d-flex flex-column">
+                            <h1 class="section-header m-auto">ROADMAP</h1>
+                            <h6 class="section-subheader m-auto stray"></h6>
+                        </div>
+                        <!-- <div class="col-sm-6">
+                            <img src="img/about.png" class="img-fluid">
+                        </div> -->
+                        
+                        <div class="col-12">
+                            <p class="section-content">
+                                This project will have a roadmap, that will be decided by the strays friend holders, where there is always a two-lane freeway every end of the project. Our goal is to start a new collection/choose a path every 4-6 months. 50% of the future collections will be allocated as free mints to stray friends holders.
+                            </p>
+                            <p class="section-content">
+                                
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+        <div class="container-fluid" id="timeline">
+            <div class="row">   
+                <div class="container section section-1 section-timeline d-flex align-items-center justify-content-center"><div class="vr" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600"></div>
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-12 d-flex flex-column">
+                            <h1 class="section-header m-auto">PROJECT TIMELINE</h1>
+                            <h6 class="section-subheader m-auto stray"></h6>
+                        </div>
+                        <!-- <div class="col-sm-6">
+                            <img src="img/about.png" class="img-fluid">
+                        </div> -->
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="timeline-card content mr-3 ongoing" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="500">
+                                        <img src="img/icon6.png" class="img-fluid float-right">
+                                        <h3>Prototype Launch and Roadmap</h3><hr>
+                                        <p>Twitter page creation and launching <a href="pfpmaker/" target="_blank">stray friends pfpmaker</a> for everyone to use. Detailed project roadmap published.
+                                        </p>
+                                    </div>
+                                    <div class="card-filler" style="margin-bottom:100px;"></div>
+                                    <div class="timeline-card content mt-3 mr-3" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-delay="100">
+                                        <img src="img/icon2.png" class="img-fluid float-right">
+                                        <h3>Building the Collection</h3><hr>
+                                        <p>This is where you all get to create with me and suggest creative traits ideas. There will be a scheduled livestream on my <a href="https://www.twitch.tv/grei" target="_blank">Twitch</a> channel where I will be working on the collection's trait list.
+                                        </p>
+                                    </div>
+                                    <div class="timeline-card content mt-3 mr-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-delay="200">
+                                        <img src="img/icon5.png" class="img-fluid float-right">
+                                        <h3>Community Building</h3><hr>
+                                        <p>Community chooses which path of the roadmap to take, charity/project voting.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                        <div class="card-filler" style="margin-bottom:100px;"></div>
+                                        
+                                        <div class="timeline-card content ml-3" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="500">
+                                            <img src="img/icon1.png" class="img-fluid float-left">
+                                            <h3>Smart Contract and Website Integration</h3><hr>
+                                            <p>Building the tech behind generative NFTs. Running test mints using the prototype traits, web3 wallet connection, etc.
+                                            </p>
+                                        </div>
+                                        <!-- <div class="card-filler" style="margin-bottom:100px;"></div> -->
+                                        <div class="timeline-card content ml-3 mt-3" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-delay="100">
+                                            <img src="img/icon3.png" class="img-fluid float-left">
+                                            <h3>Allocating Free Mints and Allowlists</h3><hr>
+                                            <p>Early supporters can redeem free mints/allowlist via Twitch channel points. We will also be actively seeking partnerships with different NFT projects that shares similar goal. <br>
+                                            </p>
+                                        </div>
+                                        <div class="card-filler" style="margin-bottom:100px;"></div>
+                                        <div class="timeline-card content ml-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-delay="200">
+                                            <img src="img/icon4.png" class="img-fluid float-left">
+                                            <h3>Mint Dates</h3><hr>
+                                            <p class="mt-2">allowlist/free mint: <span>xx/xx/xxxx</span><br>
+                                            public mint: <span>xx/xx/xxxx</span>
+                                        </p>
+                                        </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-sm-5">
+                                <div class="timeline-card content ml-3 mt-3 mb-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-delay="300">
+                                    <img src="img/icon4.png" class="img-fluid float-left">
+                                    <h3>We made it!</h3><hr>
+                                    <p>.. and you were a part of it.</p>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+        <div class="container-fluid section-2 section section-team d-flex align-items-center justify-content-center" id="team">
+            <div class="row">
+                <div class="col-sm-12 d-flex">
+                    <div class="container"><div class="row flex-column align-items-center justify-content-center">
+                            <h1 class="section-header">MEET THE TEAM?</h1>
+                            <div class="mt-2">
+                                <p class="section-content">
+                                    Just kidding, currently it's just me. This is just a low-key project started by a low-key artist in this space. Not looking for a big team, because this is a slow-paced project that I can only work on during my free time if I am not working on a few art commissions.
+                                </p></div>
+                            <h1 class="section-header m-auto" hidden>meet the <span class="color-red">t</span><span class="color-blue">e</span><span class="color-yellow">a</span><span class="color-red">m</span></h1>
+                    </div></div>
+                            
+                            
+                </div>
+                <div class="container d-flex flex-column">
+                    <div class="row">
+                        <div class="col-sm-12 d-flex">
+                        <div class="section-1-img mb-5"><img src="img/section-1.png" class="img-fluid" hidden></div></div>
+                                <div class="col-sm-4">
+                                    <div class="row hover-card d-flex">
+                                        <div class="col-12"><img src="img/grei.png" class="img-fluid"></div>
+                                        <div class="col-12">
+                                                <div class="content">
+                                                    <h3>Se7en</h3>
+                                                    <span>founder / artist / developer</span>
+                                                    <div class="card-dropdown">
+                                                        <p>
+                                                        Se7en is a 2D illustrator, web developer, and an avid gamer.
+
+                                                        She have been a freelance artist and taking art commissions for over 9 years, worked on Twitch custom emotes, character profile pictures, and banners. She's been around different web3 communities for the past 3 years.
+                                                        </p>
+                                                        <div class="socials"><a href="https://twitter.com/0xse7en_" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://www.twitch.tv/grei" target="_blank"><i class="fab fa-twitch"></i></a></div>
+                                                        <p hidden>
+                                                        <i>"I love drawing and coding which lead me to starting my own NFT project where I will get to create my own smart contract, build a website, and make playful drawings."</i>
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row hover-card d-flex">
+                                        <div class="col-12"><img src="img/placeholder.png" class="img-fluid"></div>
+                                        <div class="col-12">
+                                                <div class="content">
+                                                    <h3>CM</h3>
+                                                    <span>community manager</span>
+                                                    <p>
+                                                    </p>
+                                                    <div class="socials" hidden></div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row hover-card d-flex">
+                                        <div class="col-12"><img src="img/placeholder.png" class="img-fluid"></div>
+                                        <div class="col-12">
+                                                <div class="content">
+                                                    <h3>Moderator</h3>
+                                                    <span>moderator</span>
+                                                    <p>
+                                                    </p>
+                                                    <div class="socials"></div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">   
+                <div class="container section section-1 section-faq d-flex align-items-center justify-content-center" id="faq">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-12 d-flex flex-column">
+                            <h1 class="section-header m-auto">FAQs</h1>
+                            <h6 class="section-subheader m-auto stray"></h6>
+                        </div>
+                        <!-- <div class="col-sm-6">
+                            <img src="img/about.png" class="img-fluid">
+                        </div> -->
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-sm-4 faq-card" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="900">
+                                    <img src="/img/icon1.png" class="img-fluid">
+                                            <div class="col-sm-12 mb-5">
+                                            <h3 class="section-content">Project Funds Allocation</h3>
+                                            <p class="section-content"><br>
+                                                50% of the proceeds goes to a set of charities chosen by the holders,
+                                                35% will go to next collection's funding,
+                                                15% will go to team compensation.
+                                            </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4 faq-card" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="100">
+                                    <img src="/img/icon2.png" class="img-fluid">
+                                            <div class="col-sm-12 mb-5">
+                                            <h3 class="section-content">Collection Size</h3>
+                                            <p class="section-content"><br>
+                                                1996 mintable NFTs per collection.
+                                            </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4 faq-card" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="200">
+                                    <img src="/img/icon3.png" class="img-fluid">
+                                            <div class="col-sm-12 mb-5">
+                                            <h3 class="section-content">Mint Allocation</h3>
+                                            <p class="section-content"><br>
+                                                50% free mints, 50% allowlists.
+                                            </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 faq-card" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="900" data-aos-delay="300">
+                                    <img src="/img/icon4.png" class="img-fluid">
+                                            <div class="col-sm-12 mb-5">
+                                            <h3 class="section-content">Mint Limit</h3>
+                                            <p class="section-content"><br>
+                                                1 mint limit per wallet.
+                                            </p>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                            
+                        </div>
+                        <div class="col-12 scroll-down d-flex justify-content-center"><a href="#team"><img src="/fontawesome/angle-down.svg"></a></div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+        <div onclick="topFunction()" id="myBtn" title="Go to top" style="display:none;"><div class="d-flex flex-column justify-content-center text-center"><i class="fas fa-angle-up fa-lg"></i></div></div>
+        
+
+        <!-- MODALS -->
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" id="modal">
+                <div class="modal-content">
+                    <img id="popup-img" src="" class="img-fluid" >
+                    <div class="img-content" id="imc-1"><h3 id="popup-title"></h3><br><p id="popup-desc"></p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer d-flex align-items-center justify-content-center">
+            <div class="footer-links text-center">
+                <small>Copyright &copy; 2024 Stray Friends. All Rights Reserved</small>
+            </div>
+        </div>
+
+    </body>
+</html>
