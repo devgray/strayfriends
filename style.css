@@ -209,7 +209,7 @@ a.title{
 }
 .hero{
     min-height: 100vh;
-    /* background-color:wheat; */
+    background-color:#fffce4;
     /* background-image: url("/img/placeholderbanner.png"); */
     background-repeat: no-repeat;
 }
@@ -322,11 +322,11 @@ h3.stray{
 }
 
 .color-red{
-    color:rgb(255, 82, 97);
+    color:#f03848;
     
 }
 .color-blue{
-    color:rgb(51, 146, 255);
+    color:#2180ee;
 }
 .color-yellow{
     color: #ffc641;
