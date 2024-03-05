@@ -42,7 +42,7 @@
 @keyframes color-change {
     0% { color: rgb(255, 82, 97); }
     50% { color: rgb(51, 146, 255); }
-    100% { color: #ffc641; }
+    100% { color: #ffd470; }
 }
 html {
 	scroll-behavior: smooth;
@@ -197,7 +197,7 @@ a.title{
 }
 .btn:hover{
     color: white;
-    background-color: #ffc641;
+    background-color: #ffd470;
     box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.07); 
 }
 .menu{
@@ -234,7 +234,7 @@ a.title{
     
 }
 .section-1-bg{
-    /* background-color: #ffc641; */
+    /* background-color: #ffd470; */
     background-image: url(/img/pattern1.jpg);
 }
 p.section-content, .section-content span{
@@ -322,17 +322,17 @@ h3.stray{
 }
 
 .color-red{
-    color:#f03848;
+    color:rgb(255, 82, 97);
     
 }
 .color-blue{
-    color:#2180ee;
+    color:rgb(51, 146, 255);
 }
 .color-yellow{
-    color: #ffc641;
+    color: #ffd470;
 }
 .yellow-bg{
-    background-color: #ffc641 !important;
+    background-color: #ffd470 !important;
 }
 .hover-card img{
     /* margin-left:15px; */
@@ -432,7 +432,7 @@ h3.stray{
     /* bottom:-200vh; */
 }
 #team{
-    /* background-color: #ffc641; */
+    /* background-color: #ffd470; */
 }
 .section-faq{
     min-height: 70vh !important;
@@ -475,7 +475,7 @@ h3.section-content{
 }
 .timeline-card:hover{
     
-    border-color:#ffc641;
+    border-color:#ffd470;
     box-shadow:  0 0px 5px 0 rgba(255, 117, 53, 0.07);
 }
 .timeline-card:hover > img{
@@ -493,7 +493,7 @@ h3.section-content{
     margin: 20px 20px 0 20px;
 }
 .ongoing{
-    border-color:#ffc641;
+    border-color:#ffd470;
 }
 /* .hover-card:hover > .hover-popup{
     
@@ -547,7 +547,7 @@ hr{
     right: 50px;
     padding:15px;
     color:white;
-    background:#ffc641;
+    background:#ffd470;
     font-size:2rem;
 }
 .footer{

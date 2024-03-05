@@ -230,7 +230,10 @@ body{
     background-image: url(...);
 }
 .outline{
-    background-image: url(/pfpmaker/traits/outline.png);
+    background-image: url(/pfpmaker/traits/outline2.png);
+    /* opacity: .5; */
+    /* mix-blend-mode: screen; */
+    /* background:#2195cb; */
 }
 /* .outline.b1{
     background-image: url(/pfpmaker/traits/outline.png);

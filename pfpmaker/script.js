@@ -28,11 +28,14 @@ function download(){
     // document.querySelector(".bounding-box.outline").style.display ="none";
     pfp.style.width= "750px";
     pfp.style.height= "750px";
+    // pfp.style.filter="blur(.05rem)";
     document.getElementById("bg").style.borderRadius = "0em";
+    // document.getElementById("outline").style.mixBlendMode="screen";
     html2canvas(pfp, {scale: 1,dpi:144, width: 750,height:750}).then(canvas => {
         console.log(canvas);
         var img = new Image(), 
             can=document.createElement('canvas');
+            // canvas.style.filter="blur(.05rem)";
             
         can=canvas;
 
