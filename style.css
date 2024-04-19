@@ -452,7 +452,7 @@ h3.section-content{
     margin-top:20px;
 }
 .section.pfpmaker{
-    height:90vh;
+    /* height:90vh; */
 }
 .section-timeline{
     min-height: 110vh !important;
