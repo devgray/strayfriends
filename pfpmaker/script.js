@@ -375,7 +375,7 @@ function loadRandom(){
         }
         url = "url('/pfpmaker/traits/"+x+"/"+bodytype+"/"+order+"_"+i+".png')";
         document.querySelector(".bounding-box."+x).style.backgroundImage=url;
-        document.querySelector(".type."+x).innerHTML = order+" - "+i;
+        document.querySelector(".type."+x).innerHTML = i;
         document.querySelector(".type."+x).setAttribute("value",order);
       }else if(x=="accessory"){
         order = Math.floor(Math.random()*accessoryArray.length);
@@ -391,7 +391,7 @@ function loadRandom(){
         
         url = "url('/pfpmaker/traits/"+x+"/"+order+"_"+i+".png')";
         document.querySelector(".bounding-box."+x).style.backgroundImage=url;
-        document.querySelector(".type."+x).innerHTML = order+" - "+i;
+        document.querySelector(".type."+x).innerHTML = i;
         document.querySelector(".type."+x).setAttribute("value",order);
       }else if(x=="item"){
         order = Math.floor(Math.random()*itemArray.length);
@@ -409,7 +409,7 @@ function loadRandom(){
         }
         url = "url('/pfpmaker/traits/"+x+"/"+traitBase+"/"+order+"_"+i+".png')";
         document.querySelector(".bounding-box."+x).style.backgroundImage=url;
-        document.querySelector(".type."+x).innerHTML = order+" - "+i;
+        document.querySelector(".type."+x).innerHTML = i;
         document.querySelector(".type."+x).setAttribute("value",order);
       }else{
         str = eval(x + "Array");
@@ -422,7 +422,7 @@ function loadRandom(){
         url = "url('/pfpmaker/traits/"+x+"/"+order+"_"+i+".png')";
         // console.log(x+" loaded: "+url);
         document.querySelector(".bounding-box."+x).style.backgroundImage=url;
-        document.querySelector(".type."+x).innerHTML = order+" - "+i;
+        document.querySelector(".type."+x).innerHTML = i;
         document.querySelector(".type."+x).setAttribute("value",order);
         // console.log("loaded "+url);
       }
@@ -1168,7 +1168,8 @@ function updateMetadata(){
   attributes.push({"trait_type":"Hair","value":capitalize(traitHair)});
   attributes.push({"trait_type":"Body","value":capitalize(traitType)});
   attributes.push({"trait_type":"Shirt","value":capitalize(traitShirt)});
-  var link = "https://thestrayfriends.com/pfpmaker/testgen/"
+  // var link = "https://thestrayfriends.com/pfpmaker/testgen/";
+  var link = "";
   var externalurl = "https://thestrayfriends.com/";
   var description = "A generative art project made up of 1,996 Stray Friends lost in Metaverse."
   var NFTname = "Stray Friends";
@@ -1211,7 +1212,7 @@ function updateMetadata(){
 
   
   obj["attributes"] = attributes;
-  filename = baseID+""+eyesID+""+mouthID+""+hairID+"-"+headwearID+"-"+typeID+"-"+shirtID+"-"+outerwearID+"-"+accessID+"-"+itemID;
+  filename = baseID+""+eyesID+""+mouthID+""+hairID+"-0"+headwearID+"-0"+typeID+"-0"+shirtID+"-0"+outerwearID+"-0"+accessID+"-0"+itemID;
   fileURL = link+""+filename+".png";
   obj["image"]= fileURL;
   imgfilename = filename;
