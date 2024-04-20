@@ -7,7 +7,8 @@ var noseArray = ["button"];
 var mouthArray = ["laugh","wut","blank","katana","smiling","whuuut","cringe","cigarette","grin","throwing knife"];
 var accessoryArray = ["none","round","aviator","monocle","retro"];
 // var hairArray = [0,1,2,3,4];
-var hairColorArr = ["black","brown","blonde","darkbrown","orange","white"];
+// var hairColorArr = ["black","brown","blonde","darkbrown","orange","white"];
+var hairColorArr = ["black"];
 var baseColorArr = ["pale","light","tan","dark","undead"];
 var bgColorArr = ["type-a","type-b","type-c","type-d","type-e","type-f","type-g"];
 var bodyArray = ["type a","type b"];
@@ -152,23 +153,30 @@ function preload(){
       loc = "/pfpmaker/traits/hair/"+a+"/";
         hairArray.forEach(x => {
           hairColorArr.forEach(y => {
-            i = loc+x+"_"+y+".png";
+            i = loc+hairArray.indexOf(x)+"_"+y+".png";
             img = new Image();
             img.src = i;
+            console.log(i);
       });
     });
   });
   // preloading headwear
-  preloadHeadwear =["none","lumberjack","cap","cap","cap","headband","headband","bucket hat","beanie","beanie","fluffy ears"];
+  preloadHeadwear = headwearArray;
   i=0;
   preloadHeadwear.forEach(a => {
-    loc = "/pfpmaker/traits/hair/headwear/"+i+"_"+a+".png";
+    if(i==0){
+
+    }else{
+      loc = "/pfpmaker/traits/hair/headwear/"+i+"_"+a+".png";
+    }
+    
     img = new Image();
     img.src = loc;
     i++;
+    console.log(loc);
   });
-  // preloading eyes,outerwear,mouth,nose
-  toPreload = ["eyes","outerwear","mouth","nose"];
+  // preloading eyes,mouth,nose
+  toPreload = ["eyes","mouth","nose"];
   toPreload.forEach(a => {
     loc = "/pfpmaker/traits/"+a+"/";
     str = eval(a+ "Array");
@@ -192,7 +200,7 @@ function preload(){
     img = new Image();
     img.src = loc;
   });
-  // preloading shirts
+  // preloading shirts, outerwear
   ii = 0;
   femShirtArr.forEach(a => {
     loc1 = "/pfpmaker/traits/top/type a/"+ii+"_"+a+".png";
@@ -203,9 +211,20 @@ function preload(){
     img2.src = loc2;
     ii++;
   });
+
+  xx = 0;
+  outerwearArray.forEach(a => {
+    loc1 = "/pfpmaker/traits/outerwear/type a/"+xx+"_"+a+".png";
+    loc2 = "/pfpmaker/traits/outerwear/type b/"+xx+"_"+a+".png";
+    img1 = new Image();
+    img1.src = loc1;
+    img2 = new Image();
+    img2.src = loc2;
+    xx++;
+  });
   
-  console.log("all images loaded. loadRandom() starting...")
-  // loadRandom();
+  console.log("all images loaded. loadRandom() starting...");
+  loadRandom();
   document.querySelector(".pfp-box").style.display="flex";
   document.querySelector(".loader-box").style.display="none";
   
